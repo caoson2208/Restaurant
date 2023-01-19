@@ -342,3 +342,108 @@
   transform: scale(1.05);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
+
+/*------------------------------------------------------------------
+    Customer Reviews
+-------------------------------------------------------------------*/
+
+.customer-reviews-box {
+  padding: 70px 0px;
+}
+
+.customer-reviews-box {
+  padding: 70px 0px;
+}
+
+.customer-reviews-box .heading {
+  margin-bottom: 50px;
+}
+
+.customer-reviews-box .heading .title {
+  color: var(--dark);
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+}
+
+.customer-reviews-box .heading .desc {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin: 0px;
+}
+
+.customer-reviews-box .reviews {
+  position: relative;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.customer-reviews-box .carousel-item {
+  margin: 0 auto;
+}
+
+.customer-reviews-box .carousel-item__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 29px;
+}
+
+.customer-reviews-box .carousel-item__img img {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+}
+
+.customer-reviews-box .carousel-item__info {
+  margin-top: 18px;
+}
+
+.customer-reviews-box .carousel-item__info h3 {
+  font-size: 3rem;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.customer-reviews-box .carousel-item__info p {
+  padding: 0 6vw 1rem;
+  font-size: 1.6rem;
+}
+
+/*------------------------------------------------------------------
+    Contact info
+-------------------------------------------------------------------*/
+
+.contact-info-box {
+  background: var(--gold);
+  padding: 30px 0;
+}
+
+.contact-info-box i {
+  display: block;
+  float: left;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: var(--white);
+  color: var(--gold);
+  font-size: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.contact-info-box h4 {
+  margin-top: 5px;
+  color: var(--white);
+  font-size: 20px;
+  padding: 0px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.contact-info-box p {
+  font-size: 2em;
+  color: var(--white);
+  line-height: 1.5;
+}

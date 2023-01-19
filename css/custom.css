@@ -1,0 +1,52 @@
+.slick-arrow {
+  position: absolute;
+  top: 20%;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  line-height: 1;
+  z-index: 5;
+  transition: all 0.2s linear;
+  background: var(--gold);
+  border-radius: 4px;
+  color: var(--white);
+}
+
+.slick-arrow:hover {
+  background: var(--dark);
+}
+
+.slick-prev {
+  left: 50px;
+}
+
+.slick-next {
+  right: 50px;
+}
+
+.slick-dots {
+  padding: 20px 0;
+  left: 58%;
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots button {
+  font-size: 0;
+  margin: 6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid var(--dark);
+  transition: all 0.2s linear;
+}
+
+.slick-dots .slick-active button {
+  background: var(--gold);
+  border: 1px solid var(--gold);
+}

@@ -13,13 +13,16 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/baguetteBox.css" />
-    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
 
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+
+    <!-- Animate CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <main class="main">
@@ -178,14 +181,22 @@
       <div class="features">
         <div class="grid wide">
           <div class="row body">
-            <div class="gallery-item col l-6 m-6 c-6">
+            <div
+              class="gallery-item col l-6 m-6 c-6"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+            >
               <img
                 src="images/about-img.jpg"
                 alt="Ngọc Sơn Restaurant"
                 class="img-fluid"
               />
             </div>
-            <div class="col l-6 m-6 c-6">
+            <div
+              class="col l-6 m-6 c-6"
+              data-aos="fade-down"
+              data-aos-delay="800"
+            >
               <div class="content text-center">
                 <h1 class="headinglv1">
                   Welcome To <span>Ngọc Sơn Restaurant</span>
@@ -212,7 +223,7 @@
       <!-- End Features -->
 
       <!-- Start QT -->
-      <div class="qt-box">
+      <div class="qt-box" data-aos="fade-up">
         <div class="grid wide">
           <div class="row">
             <div class="content col l-7">
@@ -232,7 +243,7 @@
         <div class="grid wide">
           <div class="row">
             <div class="col l-12">
-              <div class="heading text-center">
+              <div class="heading text-center" data-aos="flip-down">
                 <h2 class="title">Special Menu</h2>
                 <p class="desc">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -244,7 +255,7 @@
 
           <div class="row">
             <div class="col l-12">
-              <div class="special-menu">
+              <div class="special-menu" data-aos="flip-down">
                 <div class="button-group filter-button-group">
                   <button class="active" data-filter="*">All</button>
                   <button data-filter=".drinks">Drinks</button>
@@ -255,7 +266,7 @@
             </div>
           </div>
 
-          <div class="row special-list">
+          <div class="row special-list" data-aos="zoom-in" data-aos-delay="500">
             <div class="col l-4 m-6 special-grid drinks">
               <div class="gallery-single">
                 <img src="images/img-01.jpg" class="img-fluid" alt="Image" />
@@ -365,7 +376,7 @@
         <div class="grid wide">
           <div class="row">
             <div class="col l-12">
-              <div class="heading text-center">
+              <div class="heading text-center" data-aos="flip-down">
                 <h2 class="title">Gallery</h2>
                 <p class="desc">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -375,7 +386,7 @@
             </div>
           </div>
           <div class="row tz-gallery">
-            <div class="gallery-item col l-4 m-4 c-12">
+            <div class="gallery-item col l-4 m-4 c-12" data-aos="flip-right">
               <a class="lightbox" href="images/gallery-img-01.jpg">
                 <img
                   class="img-fluid"
@@ -384,7 +395,7 @@
                 />
               </a>
             </div>
-            <div class="gallery-item col l-4 m-4 c-6">
+            <div class="gallery-item col l-4 m-4 c-6" data-aos="flip-down">
               <a class="lightbox" href="images/gallery-img-02.jpg">
                 <img
                   class="img-fluid"
@@ -393,7 +404,7 @@
                 />
               </a>
             </div>
-            <div class="gallery-item col l-4 c-4 m-6">
+            <div class="gallery-item col l-4 c-4 m-6" data-aos="flip-left">
               <a class="lightbox" href="images/gallery-img-03.jpg">
                 <img
                   class="img-fluid"
@@ -402,7 +413,7 @@
                 />
               </a>
             </div>
-            <div class="gallery-item col l-4 m-4 c-12">
+            <div class="gallery-item col l-4 m-4 c-12" data-aos="flip-right">
               <a class="lightbox" href="images/gallery-img-04.jpg">
                 <img
                   class="img-fluid"
@@ -411,7 +422,7 @@
                 />
               </a>
             </div>
-            <div class="gallery-item col l-4 c-4 m-6">
+            <div class="gallery-item col l-4 c-4 m-6" data-aos="flip-down">
               <a class="lightbox" href="images/gallery-img-05.jpg">
                 <img
                   class="img-fluid"
@@ -420,7 +431,7 @@
                 />
               </a>
             </div>
-            <div class="gallery-item col l-4 c-4 m-6">
+            <div class="gallery-item col l-4 c-4 m-6" data-aos="flip-left">
               <a class="lightbox" href="images/gallery-img-06.jpg">
                 <img
                   class="img-fluid"
@@ -433,9 +444,102 @@
         </div>
       </div>
       <!-- End Gallery -->
+
+      <!-- Start Customer Reviews -->
+      <div class="customer-reviews-box">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12">
+              <div class="heading text-center" data-aos="flip-down">
+                <h2 class="title">Customer Reviews</h2>
+                <p class="desc">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting
+                </p>
+              </div>
+            </div>
+            <div
+              class="reviews col l-10 m-10 s-12 text-center"
+              data-aos="zoom-in"
+            >
+              <div class="carousel-item">
+                <div class="col l-12 m-12 s-0 carousel-item__img">
+                  <img src="images/profile-1.jpg" alt="quotations-button" />
+                </div>
+                <div class="col l-12 m-12 s-12 carousel-item__info">
+                  <h3>Paul Mitchel</h3>
+                  <h4>Web Developer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla totam eligendi similique.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col l-12 m-12 s-0 carousel-item__img">
+                  <img src="images/profile-3.jpg" alt="quotations-button" />
+                </div>
+                <div class="col l-12 m-12 s-12 carousel-item__info">
+                  <h3>Daniel vebar</h3>
+                  <h4>Seo Analyst</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla totam eligendi similique.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col l-12 m-12 s-0 carousel-item__img">
+                  <img src="images/profile-1.jpg" alt="quotations-button" />
+                </div>
+                <div class="col l-12 m-12 s-12 carousel-item__info">
+                  <h3>Steve Fonsi</h3>
+                  <h4>Full-Stack</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla totam eligendi similique.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Customer Reviews -->
+
+      <!-- Start Contact info -->
+      <div class="contact-info-box">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-4">
+              <i class="fa fa-volume-control-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p class="lead">0799399003</p>
+              </div>
+            </div>
+            <div class="col l-4">
+              <i class="fa fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p class="lead">caongocson910@gmail.com</p>
+              </div>
+            </div>
+            <div class="col l-4">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p class="lead">371 Nguyễn Kiệm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact info -->
     </main>
 
     <!-- ALL JS FILES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/superslides/0.6.2/jquery.superslides.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
@@ -445,6 +549,20 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Slick-slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>
