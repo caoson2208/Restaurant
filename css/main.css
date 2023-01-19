@@ -1,0 +1,344 @@
+/*------------------------------------------------------------------
+    Slider
+-------------------------------------------------------------------*/
+.cover-slides {
+  position: relative;
+  height: 100vh;
+}
+
+.cover-slides .slides-container {
+  text-align: center;
+}
+
+.cover-slides .container {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* #slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+.cover-slides .container .row {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.cover-slides .container .row {
+  height: 100%;
+}
+
+.cover-slides h1 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 64px;
+  color: var(--white);
+}
+
+.cover-slides p {
+  font-size: 18px;
+  color: var(--white);
+}
+
+.slides-navigation {
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+
+.slides-navigation a {
+  position: absolute;
+  display: block;
+  background: var(--gold);
+  height: 70px;
+  width: 70px;
+  top: 50%;
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 84px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.slides-navigation a:hover {
+  background: var(--dark);
+}
+
+.slides-navigation a.prev {
+  left: 0;
+}
+
+.slides-navigation a.next {
+  right: 0;
+}
+
+.slides-navigation a i {
+  font-size: 4rem;
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.slides-pagination a {
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin: 2px;
+  border: 2px solid var(--white);
+}
+
+.slides-pagination a.current {
+  background: var(--gold);
+  border: 2px solid var(--gold);
+}
+
+.cta-btn {
+  color: var(--white);
+  background-color: transparent;
+  border-color: var(--gold);
+}
+
+.cta-btn:hover {
+  color: var(--white);
+  background-color: var(--gold);
+  border-color: var(--gold);
+}
+
+.overlay-background {
+  background: var(--dark);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+}
+
+/*------------------------------------------------------------------
+    Features
+-------------------------------------------------------------------*/
+.features {
+  padding: 70px 0px;
+}
+
+.features .body {
+  align-items: center;
+}
+
+.features .img-fluid {
+  box-shadow: -10px -10px 0px var(--gold);
+  max-width: 100%;
+  height: auto;
+}
+
+.features .content .headinglv1 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: var(--dark);
+}
+
+.features .content .headinglv1 span {
+  color: var(--gold);
+}
+
+.features .content .headinglv4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.features .content .desc {
+  font-size: 1.8rem;
+}
+
+.features .content .cta-btn {
+  color: var(--gold);
+}
+
+.features .content .cta-btn:hover {
+  color: var(--white);
+}
+
+/*------------------------------------------------------------------
+    QT
+-------------------------------------------------------------------*/
+.qt-box {
+  background: url(../images/qt-bg.jpg) no-repeat fixed center center;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+}
+
+.qt-box .content {
+  margin: 0 auto;
+}
+
+.qt-box .desc {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 44px;
+  color: var(--white);
+  font-family: var(--font-heading);
+  margin-bottom: 20px;
+}
+
+.qt-box .lead {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/*------------------------------------------------------------------
+    Menu
+-------------------------------------------------------------------*/
+.menu-box {
+  padding: 70px 0px;
+}
+
+.menu-box .heading {
+  margin-bottom: 50px;
+}
+
+.menu-box .title {
+  color: var(--dark);
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+}
+
+.menu-box .desc {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.menu-box .special-menu {
+  text-align: center;
+}
+
+.menu-box .filter-button-group {
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  margin: 10px 15px;
+  display: inline-block;
+}
+
+.menu-box .filter-button-group button {
+  color: var(--dark);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  background: var(--white);
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+}
+
+.menu-box .filter-button-group button.active {
+  background: var(--gold);
+  color: var(--white);
+  box-shadow: 2px 20px 45px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-box .gallery-single {
+  margin: 30px 0px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px var(--light);
+}
+
+.menu-box .content {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  right: 0;
+  height: 100%;
+  background: rgba(207, 166, 113, 0.9);
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.menu-box .content .title {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: var(--font-heading);
+}
+.menu-box .content .desc {
+  color: var(--white);
+  font-size: 1.8rem;
+  border-bottom: 1px dashed var(--dark);
+  padding-bottom: 15px;
+  margin: 15px 0;
+}
+.menu-box .content .price {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.menu-box .gallery-single:hover .content {
+  bottom: 0px;
+}
+
+/*------------------------------------------------------------------
+    Gallery
+-------------------------------------------------------------------*/
+
+.gallery-box {
+  padding: 70px 0px;
+}
+
+.gallery-box .heading {
+  margin-bottom: 50px;
+}
+
+.gallery-box .heading .title {
+  color: var(--dark);
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+}
+
+.gallery-box .heading .desc {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin: 0px;
+}
+
+.gallery-box .tz-gallery {
+  margin-top: 30px;
+}
+
+.gallery-box .tz-gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: 4px solid var(--gold);
+}
+
+.gallery-box .tz-gallery .lightbox img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
