@@ -100,7 +100,7 @@
         {
           breakpoint: 1025, // Độ rộng thiết bị
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 1,
           },
         },
         {

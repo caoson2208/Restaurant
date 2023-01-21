@@ -193,7 +193,7 @@
 }
 
 .baguetteBox-button svg:hover {
-  background: var(--gray-dark);
+  background: var(--black);
 }
 
 .baguetteBox-spinner {
@@ -213,7 +213,7 @@
   height: 100%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--white);
   opacity: 0.6;
   position: absolute;
   top: 0;

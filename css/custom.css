@@ -11,13 +11,13 @@
   line-height: 1;
   z-index: 5;
   transition: all 0.2s linear;
-  background: var(--gold);
+  background: var(--primary);
   border-radius: 4px;
   color: var(--white);
 }
 
 .slick-arrow:hover {
-  background: var(--dark);
+  background: var(--black);
 }
 
 .slick-prev {
@@ -42,11 +42,13 @@
   height: 15px;
   border-radius: 50%;
   background: var(--white);
-  border: 1px solid var(--dark);
+  border: 1px solid var(--black);
   transition: all 0.2s linear;
+  cursor: pointer;
 }
 
 .slick-dots .slick-active button {
-  background: var(--gold);
-  border: 1px solid var(--gold);
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  cursor: default;
 }

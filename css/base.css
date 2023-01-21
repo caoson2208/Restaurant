@@ -6,28 +6,11 @@
 @import url("https://fonts.googleapis.com/css?family=Athiti:400,500,600");
 
 :root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --gold: #d0a772;
-  --teal: #20c997;
-  --cyan: #17a2b8;
+  --primary: #d0a772;
+  --black: #010101;
   --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --blue: #007bff;
   --font-heading: "Arbutus Slab", serif;
 }
 
@@ -44,14 +27,9 @@ html {
 }
 
 a {
-  color: var(--dark);
+  color: var(--black);
   text-decoration: none !important;
-  outline: none !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
 }
 
 h1,
@@ -66,60 +44,12 @@ h6 {
   padding: 0 0 10px 0;
   font-weight: normal;
   line-height: 120% !important;
-  color: var(--dark);
-  margin: 0;
-}
-
-h1 {
-  font-size: 2.4rem;
-}
-
-h2 {
-  font-size: 2.2rem;
-}
-
-h3 {
-  font-size: 1.8rem;
-}
-
-h4 {
-  font-size: 1.6rem;
-}
-
-h5 {
-  font-size: 1.4rem;
-}
-
-h6 {
-  font-size: 1.3rem;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: #212121;
-  text-decoration: none !important;
-  opacity: 1;
-}
-
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover {
-  opacity: 0.8;
+  color: var(--black);
+  text-transform: capitalize;
 }
 
 ul {
   list-style-type: none;
-}
-
-main {
-  height: 10000px;
 }
 
 .text-center {
@@ -140,8 +70,30 @@ main {
   font-size: 1.6rem;
   line-height: 1.5;
   border-radius: 0.1875rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   text-transform: uppercase;
   margin-top: 24px;
+}
+
+/*------------------------------------------------------------------
+    All Pages
+-------------------------------------------------------------------*/
+.container-fluid::before {
+  background: var(--black);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.container-fluid .heading-title {
+  font-size: 7.2rem;
+  font-weight: 700;
+  font-style: italic;
+  font-family: var(--font-heading);
+  color: var(--white);
+  z-index: 10;
 }
