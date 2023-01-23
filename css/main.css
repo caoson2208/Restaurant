@@ -451,7 +451,7 @@
 /*------------------------------------------------------------------
    Page Menu
 -------------------------------------------------------------------*/
-.container-fluid {
+.container-fluid.menu {
   background: url(../images/slider-menu.jpg) no-repeat fixed center center;
   background-size: cover;
   height: 100vh;
@@ -467,8 +467,93 @@
 /*------------------------------------------------------------------
    Page About
 -------------------------------------------------------------------*/
-.container-fluid {
+.container-fluid.about-us {
   background: url(../images/slider-about.jpg) no-repeat fixed center center;
   background-size: cover;
   height: 100vh;
+}
+
+/*------------------------------------------------------------------
+   Page Reservation
+-------------------------------------------------------------------*/
+.container-fluid.reservation {
+  background: url(../images/reservation.jpg) no-repeat fixed center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.reservation-box {
+  padding: 70px 0px;
+}
+
+.reservation-box .heading {
+  margin-bottom: 50px;
+}
+
+.reservation-box .heading .title {
+  color: var(--black);
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+}
+
+.reservation-box .heading .desc {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin: 0px;
+}
+
+.reservation-box h3 {
+  padding: 0px 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-control[readonly] {
+  background-color: #fff;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 12px 8px;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #495057;
+  background-color: var(--white);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  min-height: 50px;
+}
+
+.form-control:focus {
+  border: 2px solid var(--primary);
+  outline: none;
+}
+
+.submit-button {
+  margin-top: 20px;
+}
+
+.btn.btn-common {
+  color: var(--primary);
+  background-color: transparent;
+  border-color: var(--primary);
+}
+
+.btn.btn-common:hover {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.text-danger,
+.list-unstyled > li {
+  color: rgb(231, 11, 11);
+  font-size: 1.4rem;
 }

@@ -50,11 +50,11 @@
                   <a class="navbar-link" href="menu.html">Menu</a>
                 </li>
                 <li class="navbar-item">
-                  <a class="navbar-link active" href="about.html">About</a>
+                  <a class="navbar-link" href="about.html">About</a>
                 </li>
                 <li class="navbar-item dropdown">
                   <a
-                    class="navbar-link dropdown-toggle"
+                    class="navbar-link active"
                     href="#"
                     id="dropdown-a"
                     data-toggle="dropdown"
@@ -122,8 +122,10 @@
                 <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="menu.html">Menu</a></li>
-                  <li><a class="active" href="about.html">About</a></li>
-                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li>
+                    <a class="active" href="reservation.html">Reservation</a>
+                  </li>
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">Contact</a></li>
                 </ul>
@@ -136,12 +138,12 @@
       <!-- End header -->
 
       <!-- Start All Pages -->
-      <div class="container-fluid about-us">
+      <div class="container-fluid reservation">
         <div class="grid wide container-fluid__content">
           <div class="row">
             <div class="col l-12 m-12 c-12">
               <h1 class="heading-title text-center" data-aos="zoom-in">
-                About Us
+                Reservation
               </h1>
             </div>
           </div>
@@ -149,238 +151,200 @@
       </div>
       <!-- End All Pages -->
 
-      <!-- Start Features -->
-      <div class="features">
-        <div class="grid wide">
-          <div class="row body">
-            <div
-              class="col l-6 m-6 c-12"
-              data-aos="zoom-in"
-              data-aos-delay="500"
-            >
-              <img
-                src="images/about-img.jpg"
-                alt="Ngọc Sơn Restaurant"
-                class="img-fluid"
-              />
-            </div>
-            <div
-              class="col l-6 m-6 c-12"
-              data-aos="fade-down"
-              data-aos-delay="600"
-            >
-              <div class="content text-center">
-                <h1 class="headinglv1">
-                  Welcome To <span>Ngọc Sơn Restaurant</span>
-                </h1>
-                <h4 class="title headinglv4">Little Story</h4>
-                <p class="desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque auctor suscipit feugiat. Ut at pellentesque ante,
-                  sed convallis arcu. Nullam facilisis, eros in eleifend luctus,
-                  odio ante sodales augue, eget lacinia lectus erat et sem.
-                </p>
-                <p class="desc">
-                  Sed semper orci sit amet porta placerat. Etiam quis finibus
-                  eros. Sed aliquam metus lorem, a pellentesque tellus pretium
-                  a. Nulla placerat elit in justo vestibulum, et maximus sem
-                  pulvinar.
-                </p>
-                <a class="btn cta-btn" href="#">Reservation</a>
-              </div>
-            </div>
-
-            <div
-              class="col l-12 m-12 c-12"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="content" style="margin-top: 18px">
-                <p class="desc">
-                  Sed tincidunt, neque at egestas imperdiet, nulla sapien
-                  blandit nunc, sit amet pulvinar orci nibh ut massa. Proin nec
-                  lectus sed nunc placerat semper. Duis hendrerit elit nec
-                  sapien porttitor, ut pretium ipsum feugiat. Aenean volutpat
-                  porta nisi in gravida. Curabitur pulvinar ligula sed facilisis
-                  bibendum. Nullam vitae nulla elit.
-                </p>
-                <p class="desc">
-                  Integer purus velit, eleifend eu magna volutpat, porttitor
-                  blandit lectus. Aenean risus odio, efficitur quis erat eget,
-                  mattis tristique arcu. Fusce in ante enim. Integer consectetur
-                  elit nec laoreet rutrum. Mauris porta turpis nec tellus
-                  accumsan pellentesque. Morbi non quam tempus, convallis urna
-                  in, cursus mauris.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Features -->
-
-      <!-- Start Menu -->
-      <div class="menu-box">
+      <!-- Start Reservation -->
+      <div class="reservation-box">
         <div class="grid wide">
           <div class="row">
             <div class="col l-12 m-12 c-12">
               <div class="heading text-center" data-aos="flip-down">
-                <h2 class="title">Special Menu</h2>
+                <h2 class="title">Reservation</h2>
                 <p class="desc">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting
                 </p>
               </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col l-12">
-              <div class="special-menu" data-aos="flip-down">
-                <div class="button-group filter-button-group">
-                  <button class="active" data-filter="*">All</button>
-                  <button data-filter=".drinks">Drinks</button>
-                  <button data-filter=".lunch">Lunch</button>
-                  <button data-filter=".dinner">Dinner</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row special-list" data-aos="zoom-in" data-aos-delay="500">
-            <div class="col l-4 m-6 special-item special-grid drinks">
-              <div class="gallery-single">
-                <img src="images/img-01.jpg" class="img-fluid" alt="Image" />
-
-                <div class="content">
-                  <h4 class="title">Special Drinks 1</h4>
-                  <p class="desc">Sed id magna vitae eros sagittis euismod.</p>
-                  <h5 class="price">$7.79</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col l-4 m-6 special-item special-grid drinks">
-              <div class="gallery-single">
-                <img src="images/img-02.jpg" class="img-fluid" alt="Image" />
-                <div class="content">
-                  <h4 class="title">Special Drinks 2</h4>
-                  <p class="desc">Sed id magna vitae eros sagittis euismod.</p>
-                  <h5 class="price">$9.79</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col l-4 m-6 special-item special-grid drinks">
-              <div class="gallery-single">
-                <img src="images/img-03.jpg" class="img-fluid" alt="Image" />
-                <div class="content">
-                  <h4 class="title">Special Drinks 3</h4>
-                  <p class="desc">Sed id magna vitae eros sagittis euismod.</p>
-                  <h5 class="price">$10.79</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col l-4 m-6 special-item special-grid lunch">
-              <div class="gallery-single">
-                <img src="images/img-04.jpg" class="img-fluid" alt="Image" />
-                <div class="content">
-                  <h4 class="title">Special Lunch 1</h4>
-                  <p class="desc">Sed id magna vitae eros sagittis euismod.</p>
-                  <h5 class="price">$15.79</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col l-4 m-6 special-item special-grid lunch">
-              <div class="gallery-single">
-                <img src="images/img-05.jpg" class="img-fluid" alt="Image" />
-                <div class="content">
-                  <h4 class="title">Special Lunch 2</h4>
-                  <p class="desc">Sed id magna vitae eros sagittis euismod.</p>
-                  <h5 class="price">$18.79</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col l-4 m-6 special-item special-grid lunch">
-              <div class="gallery-single">
-                <img src="images/img-06.jpg" class="img-fluid" alt="Image" />
-                <div class="content">
-                  <h4 class="title">Special Lunch 3</h4>
-                  <p class="desc">Sed id magna vitae eros sagittis euismod.</p>
-                  <h5 class="price">$20.79</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col l-4 m-6 special-item special-grid dinner">
-              <div class="gallery-single">
-                <img src="images/img-07.jpg" class="img-fluid" alt="Image" />
-                <div class="content">
-                  <h4 class="title">Special Dinner 1</h4>
-                  <p class="desc">Sed id magna vitae eros sagittis euismod.</p>
-                  <h5 class="price">$25.79</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col l-4 m-6 special-item special-grid dinner">
-              <div class="gallery-single">
-                <img src="images/img-08.jpg" class="img-fluid" alt="Image" />
-                <div class="content">
-                  <h4 class="title">Special Dinner 2</h4>
-                  <p class="desc">Sed id magna vitae eros sagittis euismod.</p>
-                  <h5 class="price">$22.79</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col l-4 m-6 special-item special-grid dinner">
-              <div class="gallery-single">
-                <img src="images/img-09.jpg" class="img-fluid" alt="Image" />
-                <div class="content">
-                  <h4 class="title">Special Dinner 3</h4>
-                  <p class="desc">Sed id magna vitae eros sagittis euismod.</p>
-                  <h5 class="price">$24.79</h5>
-                </div>
+            <div class="col l-12 m-12 c-12">
+              <div class="contact-block" data-aos="zoom-in">
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                      <h3>Book a table</h3>
+                      <div class="col l-12 m-12 c-12">
+                        <div class="form-group">
+                          <input
+                            id="input_date"
+                            class="form-control"
+                            type="date"
+                            name="date"
+                            required
+                            data-error="Please enter Date"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col l-12 m-12 c-12">
+                        <div class="form-group">
+                          <input
+                            id="input_time"
+                            class="form-control"
+                            type="time"
+                            required
+                            data-error="Please enter time"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col l-12 m-12 c-12">
+                        <div class="form-group">
+                          <select
+                            id="person"
+                            class="form-control"
+                            required
+                            data-error="Please select Person"
+                          >
+                            <option disabled selected>Select Person*</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                          </select>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                      <h3>Contact Details</h3>
+                      <div class="col l-12 m-12 c-12">
+                        <div class="form-group">
+                          <input
+                            id="name"
+                            class="form-control"
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            required
+                            data-error="Please enter your name"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col l-12 m-12 c-12">
+                        <div class="form-group">
+                          <input
+                            id="email"
+                            class="form-control"
+                            type="text"
+                            placeholder="Your Email"
+                            name="email"
+                            required
+                            data-error="Please enter your email"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col l-12 m-12 c-12">
+                        <div class="form-group">
+                          <input
+                            id="phone"
+                            class="form-control"
+                            type="text"
+                            placeholder="Your Numbar"
+                            name="phone"
+                            required
+                            data-error="Please enter your Numbar"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                      <div class="submit-button text-center">
+                        <button
+                          class="btn btn-common"
+                          id="submit"
+                          type="submit"
+                        >
+                          Book Table
+                        </button>
+                        <div id="msgSubmit" class="text-danger"></div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- End Menu -->
+      <!-- End Reservation -->
 
-      <!-- Start Contact info -->
-      <div class="contact-info-box">
+      <!-- Start Customer Reviews -->
+      <div class="customer-reviews-box">
         <div class="grid wide">
           <div class="row">
-            <div class="contact-item col l-4 m-12 c-12">
-              <i class="fa fa-volume-control-phone"></i>
-              <div>
-                <h4>Phone</h4>
-                <p class="lead">0799399003</p>
+            <div class="col l-12 m-12 c-12">
+              <div class="heading text-center" data-aos="flip-down">
+                <h2 class="title">Customer Reviews</h2>
+                <p class="desc">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting
+                </p>
               </div>
             </div>
-            <div class="contact-item col l-4 m-12 c-12">
-              <i class="fa fa-envelope"></i>
-              <div>
-                <h4>Email</h4>
-                <p class="lead">caongocson910@gmail.com</p>
+            <div
+              class="reviews col l-10 m-10 s-12 text-center"
+              data-aos="zoom-in"
+            >
+              <div class="carousel-item">
+                <div class="col l-12 m-12 s-0 carousel-item__img">
+                  <img src="images/profile-1.jpg" alt="quotations-button" />
+                </div>
+                <div class="col l-12 m-12 s-12 carousel-item__info">
+                  <h3>Paul Mitchel</h3>
+                  <h4>Web Developer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla totam eligendi similique.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="contact-item col l-4 m-12 c-12">
-              <i class="fa-solid fa-location-dot"></i>
-              <div>
-                <h4>Location</h4>
-                <p class="lead">371 Nguyễn Kiệm</p>
+              <div class="carousel-item">
+                <div class="col l-12 m-12 s-0 carousel-item__img">
+                  <img src="images/profile-3.jpg" alt="quotations-button" />
+                </div>
+                <div class="col l-12 m-12 s-12 carousel-item__info">
+                  <h3>Daniel vebar</h3>
+                  <h4>Seo Analyst</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla totam eligendi similique.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col l-12 m-12 s-0 carousel-item__img">
+                  <img src="images/profile-1.jpg" alt="quotations-button" />
+                </div>
+                <div class="col l-12 m-12 s-12 carousel-item__info">
+                  <h3>Steve Fonsi</h3>
+                  <h4>Full-Stack</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla totam eligendi similique.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- End Contact info -->
+      <!-- End Customer Reviews -->
 
       <!-- Start Footer -->
       <footer class="footer-area">
@@ -490,10 +454,10 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!-- Move Gallery -->
     <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
     <!-- <script src="js/popper.min.js"></script> -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
-    <!-- <script src="js/form-validator.min.js"></script> -->
-    <!-- <script src="js/contact-form-script.js"></script> -->
     <script src="js/main.js"></script>
 
     <!-- Slick-slider -->
