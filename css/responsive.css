@@ -39,6 +39,10 @@
     padding: 8px;
     border-radius: 4px;
   }
+
+  .stuff-box .our-team {
+    margin-top: 38px;
+  }
 }
 
 /* Tablet*/
@@ -56,6 +60,22 @@
 @media screen and (max-width: 739px) {
   .hide-on-mobile {
     display: none !important;
+  }
+
+  .cover-slides h1 {
+    font-size: 4.6rem;
+  }
+
+  .cover-slides p {
+    font-size: 1.2rem;
+  }
+
+  .container-fluid .heading-title {
+    font-size: 5.4rem;
+  }
+
+  .features .content .desc {
+    font-size: 1.4rem;
   }
 
   .special-item,

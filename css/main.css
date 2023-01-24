@@ -16,22 +16,6 @@
   z-index: 1;
 }
 
-/* #slides .scrollable {
-  *zoom: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  height: 100%;
-}
-
-#slides .scrollable:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
 .cover-slides .container .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -50,7 +34,7 @@
 }
 
 .cover-slides p {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: var(--white);
 }
 
@@ -138,9 +122,6 @@
 /*------------------------------------------------------------------
     Features
 -------------------------------------------------------------------*/
-.features {
-  padding: 70px 0px;
-}
 
 .features .body {
   align-items: center;
@@ -211,24 +192,6 @@
 /*------------------------------------------------------------------
     Menu
 -------------------------------------------------------------------*/
-.menu-box {
-  padding: 70px 0px;
-}
-
-.menu-box .heading {
-  margin-bottom: 50px;
-}
-
-.menu-box .title {
-  color: var(--black);
-  font-size: 2.8rem;
-  font-family: var(--font-heading);
-}
-
-.menu-box .desc {
-  font-size: 1.8rem;
-  font-weight: 200;
-}
 
 .menu-box .special-menu {
   text-align: center;
@@ -305,20 +268,6 @@
     Gallery
 -------------------------------------------------------------------*/
 
-.gallery-box {
-  padding: 70px 0px;
-}
-
-.gallery-box .heading {
-  margin-bottom: 50px;
-}
-
-.gallery-box .heading .title {
-  color: var(--black);
-  font-size: 2.8rem;
-  font-family: var(--font-heading);
-}
-
 .gallery-box .heading .desc {
   font-size: 1.8rem;
   font-weight: 200;
@@ -346,30 +295,6 @@
 /*------------------------------------------------------------------
     Customer Reviews
 -------------------------------------------------------------------*/
-
-.customer-reviews-box {
-  padding: 70px 0px;
-}
-
-.customer-reviews-box {
-  padding: 70px 0px;
-}
-
-.customer-reviews-box .heading {
-  margin-bottom: 50px;
-}
-
-.customer-reviews-box .heading .title {
-  color: var(--black);
-  font-size: 2.8rem;
-  font-family: var(--font-heading);
-}
-
-.customer-reviews-box .heading .desc {
-  font-size: 1.8rem;
-  font-weight: 200;
-  margin: 0px;
-}
 
 .customer-reviews-box .reviews {
   position: relative;
@@ -482,26 +407,6 @@
   height: 100vh;
 }
 
-.reservation-box {
-  padding: 70px 0px;
-}
-
-.reservation-box .heading {
-  margin-bottom: 50px;
-}
-
-.reservation-box .heading .title {
-  color: var(--black);
-  font-size: 2.8rem;
-  font-family: var(--font-heading);
-}
-
-.reservation-box .heading .desc {
-  font-size: 1.8rem;
-  font-weight: 200;
-  margin: 0px;
-}
-
 .reservation-box h3 {
   padding: 0px 15px;
   margin-bottom: 20px;
@@ -509,51 +414,136 @@
   font-size: 1.8rem;
 }
 
-.form-group {
-  margin-bottom: 18px;
+
+
+/*------------------------------------------------------------------
+   Page Stuff
+-------------------------------------------------------------------*/
+.container-fluid.stuff {
+  background: url(../images/slider-stuff.jpg) no-repeat fixed center center;
+  background-size: cover;
+  height: 100vh;
 }
 
-.form-control[readonly] {
-  background-color: #fff;
-}
-
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 12px 8px;
-  font-size: 1.6rem;
-  line-height: 2;
-  color: #495057;
-  background-color: var(--white);
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  min-height: 50px;
-}
-
-.form-control:focus {
+.stuff-box .our-team {
   border: 2px solid var(--primary);
-  outline: none;
+  border-radius: 0px;
+  margin: 10px;
+  z-index: 1;
+  position: relative;
 }
 
-.submit-button {
-  margin-top: 20px;
+.stuff-box .our-team:before,
+.stuff-box .our-team:after {
+  content: "";
+  width: 100%;
+  height: 104%;
+  background: var(--primary);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-50%) scaleX(0.3);
+  transition: all 0.3s ease 0s;
 }
 
-.btn.btn-common {
-  color: var(--primary);
-  background-color: transparent;
-  border-color: var(--primary);
+.stuff-box .our-team:after {
+  width: 106%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(0.25);
 }
 
-.btn.btn-common:hover {
+.stuff-box .our-team:hover:before {
+  transform: translateY(-50%) scaleX(0.7);
+}
+
+.stuff-box .our-team:hover:after {
+  transform: translate(-50%, -50%) scaleY(0.7);
+}
+
+.stuff-box .our-team .image {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.stuff-box .our-team .team-content {
+  width: 93%;
+  padding: 25px 0 10px;
+  background: var(--primary);
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 0.3s cubic-bezier(0.5, 0.2, 0.1, 0.9);
+}
+
+.stuff-box .our-team:hover .team-content {
+  bottom: 10px;
+  opacity: 1;
+}
+
+.stuff-box .our-team .title {
+  font-size: 2.5rem;
+  font-weight: 600;
   color: var(--white);
-  background-color: var(--primary);
-  border-color: var(--primary);
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0;
 }
 
-.text-danger,
-.list-unstyled > li {
-  color: rgb(231, 11, 11);
-  font-size: 1.4rem;
+.stuff-box .our-team .post {
+  display: block;
+  font-size: 16px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.stuff-box .our-team .social-list .social-item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.stuff-box .our-team .social-list .social-item {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.stuff-box .our-team .social-list .social-item .social-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background: var(--white);
+  font-size: 2rem;
+  color: var(--primary);
+  transition: all 0.3s ease 0s;
+}
+
+.stuff-box .our-team .social .social-link:hover {
+  background: var(--white);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+  color: var(--primary);
+}
+
+/*------------------------------------------------------------------
+   Page Gallery
+------------------------- ------------------------------------------*/
+.container-fluid.gallery {
+  background: url(../images/slider-gallery.jpg) no-repeat fixed center center;
+  background-size: cover;
+  height: 100vh;
+}
+/*------------------------------------------------------------------
+   Page Contact
+------------------------- ------------------------------------------*/
+.container-fluid.contact {
+  background: url(../images/slider-contact.jpg) no-repeat fixed center center;
+  background-size: cover;
+  height: 100vh;
 }

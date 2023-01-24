@@ -2,39 +2,22 @@
   "use strict";
   AOS.init();
   /* ..............................................
-	Loader 
+    Padding header when scroll
     ................................................. */
+  $(document).ready(function () {
+    // PC
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 100) $(".header").addClass("header-padding");
+      else $(".header").removeClass("header-padding");
+    });
 
-  $(window).on("load", function () {
-    $(".preloader").fadeOut();
-    $("#preloader").delay(550).fadeOut("slow");
-    $("body").delay(450).css({ overflow: "visible" });
+    // Tablet and Moblie
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 100)
+        $(".header__sort-bar").addClass("header__sort-bar-top");
+      else $(".header__sort-bar").removeClass("header__sort-bar-top");
+    });
   });
-
-  /* ..............................................
-    Fixed Menu
-    ................................................. */
-
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 50) {
-      $(".top-header").addClass("fixed-menu");
-    } else {
-      $(".top-header").removeClass("fixed-menu");
-    }
-  });
-
-  /* ..............................................
-    Gallery
-    ................................................. */
-
-  $("#slides").superslides({
-    inherit_width_from: ".cover-slides",
-    inherit_height_from: ".cover-slides",
-    play: 5000,
-    animation: "fade",
-  });
-
-  $(".cover-slides ul li").append("<div class='overlay-background'></div>");
 
   /* ..............................................
     Map Full
@@ -71,6 +54,20 @@
     var $grid = $(".special-list").isotope({
       itemSelector: ".special-grid",
     });
+  });
+
+  /* ..............................................
+    Gallery
+    ................................................. */
+  $(document).ready(function () {
+    $("#slides").superslides({
+      inherit_width_from: ".cover-slides",
+      inherit_height_from: ".cover-slides",
+      play: 5000,
+      animation: "fade",
+    });
+
+    $(".cover-slides ul li").append("<div class='overlay-background'></div>");
   });
 
   /* ..............................................
@@ -116,16 +113,4 @@
       autoplaySpeed: 1000,
     });
   });
-
-  /* ..............................................
-    Datepicker
-    ................................................. */
-
-  $(".datepicker").pickadate();
-
-  $(".time").pickatime();
 })(jQuery);
-
-/* ..............................................
-    Datepicker
-    ................................................. */

@@ -1,12 +1,16 @@
 .header {
   box-shadow: rgba(0, 0, 0, 0.5) 2px 5px 6px;
-  padding: 12px 0;
+  padding: 16px 0;
   background-color: var(--white);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
+}
+
+.header-padding {
+  padding: 8px 0;
 }
 
 .navbar {

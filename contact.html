@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ngọc Sơn Restaurent</title>
+
+    <!-- Main StyleSheet CSS -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- Dialog box -->
+    <link rel="stylesheet" href="./css/baguetteBox.css" />
+    <!-- Custom -->
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Animate CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- Start header -->
+      <header class="header">
+        <div class="grid wide">
+          <nav class="navbar row">
+            <div class="navbar-right">
+              <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="Ngọc Sơn Restaurent" />
+              </a>
+            </div>
+
+            <!-- Start navbar pc -->
+            <div class="navbar-left hide-on-mobile-tablet" id="navbars-rs-food">
+              <ul class="navbar-list">
+                <li class="navbar-item">
+                  <a class="navbar-link" href="index.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="menu.html">Menu</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="about.html">About</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="blog.html">Blog</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link active" href="contact.html">Contact</a>
+                </li>
+                <li class="navbar-item dropdown">
+                  <a
+                    class="navbar-link"
+                    href="#"
+                    id="dropdown-a"
+                    data-toggle="dropdown"
+                    >Pages <i class="fa fa-caret-down"></i
+                  ></a>
+
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                      <a class="dropdown-link" href="reservation.html"
+                        >Reservation</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="dropdown-link" href="stuff.html">Stuff</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="dropdown-link" href="gallery.html">Gallery</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- End navbar pc -->
+
+            <!-- navbar-moble-tablet -->
+            <div class="navbar__bars-btn hide-on-pc">
+              <label for="navbar-btn--input" class="navbar-btn">
+                <i class="fas fa-bars fa-2x"></i>
+              </label>
+              <input
+                type="checkbox"
+                hidden
+                name="btn"
+                id="navbar-btn--input"
+                class="navbar-input"
+              />
+              <label for="navbar-btn--input" class="navbar__overlay"></label>
+
+              <nav class="navbar__mobile">
+                <label for="navbar-btn--input" class="navbar__mobile-close">
+                  <i class="fas fa-times fa-2x"></i>
+                </label>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a class="active" href="contact.html">Contact</a></li>
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="stuff.html">Stuff</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- End navbar-moble-tablet -->
+          </nav>
+        </div>
+      </header>
+      <!-- End header -->
+
+      <!-- Start All Pages -->
+      <div class="container-fluid contact">
+        <div class="grid wide container-fluid__content">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <h1 class="heading-title text-center" data-aos="zoom-in">
+                Contact
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End All Pages -->
+
+      <!-- Start Map -->
+      <section>
+        <div class="map-box" data-aos="zoom-in">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52723.18022491253!2d106.67590872297627!3d10.836254958059579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9ef195798144b1f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDM!5e0!3m2!1svi!2s!4v1660310724809!5m2!1svi!2s"
+            width="100%"
+            height="550"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!-- End Map -->
+
+      <!-- Start Contact -->
+      <div class="contact-box">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <div class="heading text-center" data-aos="flip-down">
+                <h2 class="title">Contact</h2>
+                <p class="desc">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col l-12 m-12 c-12" data-aos="zoom-in">
+              <form id="contactForm">
+                <div class="col l-12 m-12 c-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Your Name"
+                      required
+                      data-error="Please enter your name"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col l-12 m-12 c-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Your Email"
+                      id="email"
+                      class="form-control"
+                      name="name"
+                      required
+                      data-error="Please enter your email"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col l-12 m-12 c-12">
+                  <div class="form-group">
+                    <select
+                      class="custom-select d-block form-control"
+                      id="guest"
+                      required
+                      data-error="Please Select Person"
+                    >
+                      <option disabled selected>Please Select Person*</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col l-12 m-12 c-12">
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      placeholder="Your Message"
+                      rows="4"
+                      data-error="Write your message"
+                      required
+                    ></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="submit-button text-center">
+                    <button class="btn btn-common" id="submit" type="submit">
+                      Send Message
+                    </button>
+                    <div id="msgSubmit"></div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start Contact info -->
+      <div class="contact-info-box">
+        <div class="grid wide">
+          <div class="row">
+            <div class="contact-item col l-4 m-12 c-12">
+              <i class="fa fa-volume-control-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p class="lead">0799399003</p>
+              </div>
+            </div>
+            <div class="contact-item col l-4 m-12 c-12">
+              <i class="fa fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p class="lead">caongocson910@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item col l-4 m-12 c-12">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p class="lead">371 Nguyễn Kiệm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact info -->
+
+      <!-- Start Footer -->
+      <footer class="footer-area">
+        <!-- footer top -->
+        <div class="footer-top--bg">
+          <div class="footer-top">
+            <div class="grid wide">
+              <div class="row">
+                <div class="col l-3 m-6 c-12">
+                  <h3>About Us</h3>
+                  <p>
+                    Integer cursus scelerisque ipsum id efficitur. Donec a dui
+                    fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac
+                    lectus a interdum. Vivamus semper posuere dui, at ornare
+                    turpis ultrices sit amet. Nulla cursus lorem ut nisi porta,
+                    ac eleifend arcu ultrices.
+                  </p>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                  <h3>Opening hours</h3>
+                  <p><strong>Monday: </strong>Closed</p>
+                  <p><strong>Tue-Wed :</strong> 9:Am - 10PM</p>
+                  <p><strong>Thu-Fri :</strong> 9:Am - 10PM</p>
+                  <p><strong>Sat-Sun :</strong> 5:PM - 10PM</p>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                  <h3>Contact information</h3>
+                  <p class="lead">371 Nguyễn Kiệm</p>
+                  <p class="lead"><a href="#">0799399003</a></p>
+                  <p><a href="#">caongocson910@gmail.com</a></p>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                  <h3>Subscribe</h3>
+                  <div class="subscribe_form">
+                    <form>
+                      <input
+                        name="EMAIL"
+                        id="subs-email"
+                        class="form_input"
+                        placeholder="Email Address..."
+                        type="email"
+                      />
+                      <button type="submit" class="submit">SUBSCRIBE</button>
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+                  <ul class="social-list">
+                    <li class="social-item">
+                      <a class="social-link" href="#" target="_blank"
+                        ><i class="fab fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li class="social-item">
+                      <a class="social-link" href="#" target="_blank"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li class="social-item">
+                      <a class="social-link" href="#" target="_blank"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li class="social-item">
+                      <a class="social-link" href="#" target="_blank"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </li>
+                    <li class="social-item">
+                      <a class="social-link" href="#" target="_blank"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer-bottom -->
+        <div class="footer-bottom">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-12 m-12 c-12">
+                <div class="name">
+                  <p>Copyright &copy; 2023 All Rights Reserved</p>
+                  <p>Design By <strong>Ngọc Sơn</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+
+    <!-- ALL JS FILES -->
+
+    <!-- Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/superslides/0.6.2/jquery.superslides.min.js"></script>
+    <!-- Load Menu -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Move Gallery -->
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/main.js"></script>
+
+    <!-- Slick-slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>
