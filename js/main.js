@@ -114,3 +114,16 @@
     });
   });
 })(jQuery);
+/* ..............................................
+    Searching
+  ............................................... */
+function searching() {
+  var check = document.getElementById("search");
+  if (check.value != "") {
+    swal({
+      title: "Xin lỗi !",
+      text: "Tính năng chưa được phát triển, vui lòng thử lại sau !",
+      icon: "info",
+    });
+  } else swal("Xảy ra lỗi !", "Bạn chưa nhập thông tin", "error");
+}

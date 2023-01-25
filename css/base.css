@@ -108,7 +108,8 @@ ul {
 .customer-reviews-box,
 .reservation-box,
 .stuff-box,
-.contact-box {
+.contact-box,
+.blog-box {
   padding: 70px 0;
 }
 
@@ -171,4 +172,12 @@ ul {
 .list-unstyled > li {
   color: rgb(231, 11, 11);
   font-size: 1.4rem;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
 }
