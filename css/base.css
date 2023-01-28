@@ -181,3 +181,21 @@ ul {
 .pull-right {
   float: right;
 }
+
+#go-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  background: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s ease-out;
+  font-size: 3.6rem;
+  line-height: 1;
+}
