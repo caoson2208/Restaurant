@@ -273,6 +273,8 @@ label.navbar-btn > i:hover {
   margin-top: 20px;
   padding-bottom: 10px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-top .social-list .social-item {
