@@ -2,6 +2,12 @@
   "use strict";
   AOS.init();
   /* ..............................................
+    Reload page
+    ................................................. */
+  $(window).on("load", function (event) {
+    $("#loader-wrapper").delay(700).fadeOut(300);
+  });
+  /* ..............................................
     Padding header when scroll
     ................................................. */
   $(document).ready(function () {
