@@ -14,6 +14,7 @@
   background: var(--primary);
   border-radius: 4px;
   color: var(--white);
+  cursor: pointer;
 }
 
 .slick-arrow:hover {
